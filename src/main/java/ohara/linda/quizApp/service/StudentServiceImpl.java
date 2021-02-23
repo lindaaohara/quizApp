@@ -27,7 +27,7 @@ public class StudentServiceImpl implements StudentService{
             Student studentUpdate = studentDb.get();
             studentUpdate.setId(student.getId());
             studentUpdate.setName(student.getName());
-            studentUpdate.setQuestionId(student.getQuestionId());
+            studentUpdate.setQuestions(student.getQuestions());
             studentRepository.save(studentUpdate);
             return studentUpdate;
         }else{
